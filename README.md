@@ -6,7 +6,7 @@
 Use the safest workable execution layer first:
 `API/CLI -> Structured Browser Automation -> Visual Browser Control -> Human Confirmation`
 
-[中文介绍](#中文介绍) · [English Overview](#english-overview) · [What's Included](#whats-included) · [Release Notes](#release-notes)
+[中文介绍](#中文介绍) · [English Overview](#english-overview) · [Examples](#examples) · [What's Included](#whats-included) · [Release Notes](#release-notes)
 
 ## Why This Exists
 
@@ -51,6 +51,16 @@ It gives agents a simple but practical execution order:
 
 This keeps browser-heavy workflows more reliable, easier to reason about, and safer to operate across different agent stacks.
 
+## Examples
+
+### Example prompts
+
+- `Use $browser-ops-routing to handle this login-gated dashboard task and stop before any irreversible action.`
+- `使用 $browser-ops-routing 判断这一步应该走 API、结构化浏览器还是视觉模式。`
+- `Use $browser-ops-routing to review this browser workflow and identify where human confirmation is required.`
+
+For longer examples, see [`examples/`](./examples).
+
 ## What's Included
 
 - `SKILL.md`
@@ -59,6 +69,8 @@ This keeps browser-heavy workflows more reliable, easier to reason about, and sa
   UI metadata for skill pickers and skill libraries
 - `references/openclaw.md`
   OpenClaw-specific implementation guidance kept outside the core shared policy
+- `examples/`
+  Short bilingual usage examples for common browser-heavy agent tasks
 
 ## Design Principles
 
