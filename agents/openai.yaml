@@ -1,0 +1,4 @@
+interface:
+  display_name: "Browser Ops Routing"
+  short_description: "Use shared routing rules for browser reads, ops, and confirmations."
+  default_prompt: "Use $browser-ops-routing to choose the safest and most reliable execution layer for this web task."
